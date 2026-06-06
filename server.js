@@ -8,7 +8,7 @@ const connect = require('./db')
 const User = require('./user.model')
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 app.use(bodyparser.json())
 app.use(cors())
